@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./../CSS/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/layout.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/typography.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/specifics.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/scaffolding.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/responsive.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <title>CSS Responsive</title>
+  </head>
+  <body>
+    <!-- MENU -->
+
+    <header>
+      <nav class="nav1">
+        <ol>
+          <li><a href="./../index.html">Home</a></li>
+          <li>
+            <a href="./../pages/responsive.html">Responsive images</a>
+          </li>
+          <li><a href="./../pages/flexbox.html">Flexbox</a></li>
+          <li><a href="./../pages/grid.html">Grid</a></li>
+          <li>
+            <a href="./../pages/transform.html">Transforms</a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+
+    <!-- SECTION 1-->
+
+    <section class="bg-img-cover"><h1>Responsive images</h1></section>
+
+    <!--SECTION 2-->
+
+    <h2>Background image attachment fixed</h2>
+
+    <section class="bg-img-fixed"></section>
+
+    <p class="example">
+      <strong>section</strong> { <br />
+      &nbsp background-attachment: fixed;<br />
+      &nbsp background-position: center;<br />
+      &nbsp background-image: url("../img/large/ourang-outan.jpg");<br />
+      &nbsp background-repeat: no-repeat;<br />
+      }
+    </p>
+
+    <!--SECTION 3-->
+
+    <h2>Large reponsive image</h2>
+
+    <section class="img-responsive">
+      <img src="./../img/large/gorilla.jpg" alt="Gorilla face" />
+    </section>
+
+    <p class="example">
+      <strong>img</strong> { <br />
+      &nbsp width: 100%;<br />
+      }
+    </p>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <img src="./../img/footer-img/alex.jpg" alt="id photo" />
+      <p>
+        Alexandre Dean <br />
+        alex.dean9g@gmail.com <br />
+        <a href="http://alexdeanwebdesign.com">alexdeanwebdesign.com</a>
+      </p>
+      <nav class="nav2">
+        <ol>
+          <li><a href="./../index.html">Home</a></li>
+          <li>
+            <a href="responsive.html">Responsive images</a>
+          </li>
+          <li><a href="flexbox.html">Flexbox</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li>
+            <a href="transform.html">Transforms</a>
+          </li>
+        </ol>
+      </nav>
+    </footer>
+  </body>
+</html>

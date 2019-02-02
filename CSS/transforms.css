@@ -1,0 +1,35 @@
+img {
+  width: 100%;
+}
+
+.transforms {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #efefef50;
+  margin-top: 40px;
+}
+
+.classic-div {
+  padding-bottom: 3%;
+}
+
+.t-skew img {
+  transform: skew(5deg, 5deg);
+}
+
+.t-rotate img {
+  transform: rotate(0.5turn);
+}
+.t-scale img {
+  transform: scale(0.9, 0.5);
+}
+
+.t-translate img {
+  transform: translate(-30%, 50px);
+}
+
+.t-matrix img {
+  transform: matrix(0.87, -0.5, 0, 0.87, 0, 1);
+}

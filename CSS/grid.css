@@ -1,0 +1,20 @@
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  padding-top: 30px;
+  grid-gap: 1em;
+}
+
+.grid-layout > h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin: 2%;
+}
+
+.grid-layout p {
+  text-align: left;
+}

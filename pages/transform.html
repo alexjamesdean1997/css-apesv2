@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./../CSS/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/layout.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/typography.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/specifics.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/scaffolding.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/transforms.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <title>CSS Transforms</title>
+  </head>
+  <body>
+    <!-- MENU -->
+
+    <header>
+      <nav class="nav1">
+        <ol>
+          <li><a href="./../index.html">Home</a></li>
+          <li>
+            <a href="./../pages/responsive.html">Responsive images</a>
+          </li>
+          <li><a href="./../pages/flexbox.html">Flexbox</a></li>
+          <li><a href="./../pages/grid.html">Grid</a></li>
+          <li>
+            <a href="./../pages/transform.html">Transforms</a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+
+    <h1>Transforms</h1>
+
+    <section class="transforms">
+      <h2>Skew</h2>
+      <div class="classic-div t-skew">
+        <img src="./../img/large/gorilla.jpg" alt="baby-monkeys" />
+        <p>
+          The skew( ) CSS function defines a transformation that skews an
+          element on the 2D plane. <br /><br /><strong
+            >img { <br /><br />transform: skew(5deg, 5deg);</strong
+          ><br /><br />
+          }
+        </p>
+      </div>
+    </section>
+
+    <section class="transforms">
+      <h2>Rotate</h2>
+      <div class="classic-div t-rotate">
+        <img src="./../img/large/gorilla.jpg" alt="baby-monkeys" />
+        <p>
+          The rotate() CSS function defines a transformation that rotates an
+          element around a fixed point on the 2D plane, without deforming it.
+          <br /><br /><strong>
+            img {<br /><br />
+            transform: rotate(0.5turn);<br /><br />
+            }
+          </strong>
+        </p>
+      </div>
+    </section>
+
+    <section class="transforms">
+      <h2>Matrix</h2>
+      <div class="classic-div t-matrix">
+        <img src="./../img/large/gorilla.jpg" alt="baby-monkeys" />
+        <p>
+          The matrix() CSS function defines a homogeneous 2D transformation
+          matrix. <br /><br /><strong>
+            img {<br /><br />
+            transform: matrix(0.87, -0.5, 0, 0.87, 0, 1);<br /><br />
+            }</strong
+          >
+        </p>
+      </div>
+    </section>
+
+    <section class="transforms">
+      <h2>Scale</h2>
+      <div class="classic-div t-scale">
+        <img src="./../img/large/gorilla.jpg" alt="baby-monkeys" />
+        <p>
+          The scale() CSS function defines a transformation that resizes an
+          element on the 2D plane. Because the amount of scaling is defined by a
+          vector, it can resize the horizontal and vertical dimensions at
+          different scales. <br /><br /><strong>
+            img { <br /><br />transform: scale(0.9, 0.5); <br /><br />}</strong
+          >
+        </p>
+      </div>
+    </section>
+
+    <section class="transforms">
+      <h2>translate</h2>
+      <div class="classic-div t-translate">
+        <img src="./../img/large/gorilla.jpg" alt="baby-monkeys" />
+        <p>
+          The translate() CSS function repositions an element in the horizontal
+          and/or vertical directions. <br /><br /><strong
+            >img { <br />
+            <br />
+            translate(-30%, 50px); <br />
+            <br />}</strong
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <img src="./../img/footer-img/alex.jpg" alt="id photo" />
+      <p>
+        Alexandre Dean <br />
+        alex.dean9g@gmail.com <br />
+        <a href="http://alexdeanwebdesign.com">alexdeanwebdesign.com</a>
+      </p>
+      <nav class="nav2">
+        <ol>
+          <li><a href="./../index.html">Home</a></li>
+          <li>
+            <a href="responsive.html">Responsive images</a>
+          </li>
+          <li><a href="flexbox.html">Flexbox</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="transform.html">Transforms</a></li>
+        </ol>
+      </nav>
+    </footer>
+  </body>
+</html>

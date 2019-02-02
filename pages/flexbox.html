@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./../CSS/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/layout.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/typography.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/specifics.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/scaffolding.css" />
+    <link rel="stylesheet" type="text/css" href="./../CSS/flexbox.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <!-- MENU -->
+
+    <header>
+      <nav class="nav1">
+        <ol>
+          <li><a href="./../index.html">Home</a></li>
+          <li>
+            <a href="./../pages/responsive.html">Responsive images</a>
+          </li>
+          <li><a href="./../pages/flexbox.html">Flexbox</a></li>
+          <li><a href="./../pages/grid.html">Grid</a></li>
+          <li>
+            <a href="./../pages/transform.html">Transforms</a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+
+    <!-- THE FIVE BASIC FAMILIES OF APES-->
+
+    <h1>FLEXBOX</h1>
+
+    <p>
+      Full width image strips vertically stacked on screens below 960 px width,
+      evenly distributed blocks on screens above 960 px using object-fit.
+    </p>
+
+    <section class="strips">
+      <img src="./../img/medium/capucin.jpg" alt="monkey" />
+
+      <img src="./../img/medium/baboon.jpg" alt="monkey" />
+
+      <img src="./../img/medium/baby-monkeys.jpg" alt="monkey" />
+
+      <img src="./../img/medium/chimpanzee.jpg" alt="monkey" />
+
+      <img src="./../img/medium/gorilla.jpg" alt="monkey" />
+
+      <img src="./../img/medium/snub-nosed-monkey.jpg" alt="monkey" />
+    </section>
+
+    <p class="example">
+      <strong>.strips > img</strong> {<br />
+      &nbsp max-height: 200px;<br />
+      &nbsp object-fit: cover;<br />
+      &nbsp width: 100%;<br />
+      }<br />
+      <br />
+      <strong>@media screen and (min-width: 960px)</strong> { <br />
+      &nbsp .strips { <br />
+      &nbsp &nbsp display: flex; <br />
+      &nbsp &nbsp justify-content: space-evenly; <br />
+      &nbsp &nbsp flex-wrap: wrap; <br />
+      &nbsp } <br />
+      &nbsp .strips > img { <br />
+      &nbsp &nbsp max-height: 200px; <br />
+      &nbsp &nbsp object-fit: none; <br />
+      &nbsp &nbsp width: auto; <br />
+      &nbsp &nbsp margin-top: 10px; <br />
+      &nbsp } <br />
+      }
+    </p>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <img src="./../img/footer-img/alex.jpg" alt="id photo" />
+      <p>
+        Alexandre Dean <br />
+        alex.dean9g@gmail.com <br />
+        <a href="http://alexdeanwebdesign.com">alexdeanwebdesign.com</a>
+      </p>
+      <nav class="nav2">
+        <ol>
+          <li><a href="./../index.html">Home</a></li>
+          <li>
+            <a href="responsive.html">Responsive images</a>
+          </li>
+          <li><a href="flexbox.html">Flexbox</a></li>
+          <li><a href="grid.html">Grid</a></li>
+          <li><a href="transform.html">Transforms</a></li>
+        </ol>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+/* Background changes for 4 screen sizes */
+
+body {
+  background-color: lightblue;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background-color: lightcoral;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: lightpink;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/*  HEADER  */
+
+.nav1 {
+  background-color: #292929;
+  color: WHITE;
+  padding: 20px;
+  border-radius: 4px;
+}
+ol {
+  list-style-type: none;
+}
+li {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* SECTIONS */
+
+.section-accueil {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #efefef50;
+  margin-bottom: 40px;
+}
+
+/*  SECTION RESPONSIVE IMAGES */
+
+section:nth-of-type(1) > p {
+  padding: 20px;
+  columns: 3;
+}
+
+@media screen and (max-width: 900px) {
+  .section1 > p {
+    columns: 1;
+  }
+}
+
+/*  SECTION TRANSFORMS */
+section:nth-last-of-type(1) > .classic-div > img {
+  transform: skew(10deg, 10deg);
+}
+
+/* CLASSIC DIV */
+
+.classic-div > img {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.classic-div > p {
+  margin-right: 5%;
+}
+
+.box-cta a {
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px 0 40px;
+  color: white;
+  background-color: #272727;
+  border-radius: 3px;
+}
+
+/* footer */
+
+footer {
+  background-color: #191919;
+  color: white;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 2em;
+  text-align: center;
+  line-height: 2em;
+  margin-top: 110px;
+}
+
+footer > img {
+  margin-left: auto;
+  margin-right: auto;
+}

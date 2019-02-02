@@ -1,0 +1,17 @@
+/* ----- CSS FOR HOME PAGE ONLY ----- */
+
+/* CALL TO ACTION BUTTON */
+
+.box-cta {
+  display: flex;
+  justify-content: center;
+}
+
+/* CSS EXAMPLES */
+
+.example {
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,35 @@
+.bg-img-cover {
+  min-height: 90vh;
+  background: url("./../img/large/capucin.jpg") center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0;
+  padding: 30px 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.bg-img-fixed {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 80%;
+  background-image: url("../img/large/ourang-outan.jpg");
+  background-repeat: no-repeat;
+}
+
+.img-responsive {
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
