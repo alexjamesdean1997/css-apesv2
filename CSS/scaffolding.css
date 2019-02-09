@@ -68,7 +68,7 @@ section:nth-of-type(1) > p {
 }
 
 /*  SECTION TRANSFORMS */
-section:nth-last-of-type(1) > .classic-div > img {
+.section-accueil:nth-last-of-type(1) > .classic-div > img {
   transform: skew(10deg, 10deg);
 }
 
